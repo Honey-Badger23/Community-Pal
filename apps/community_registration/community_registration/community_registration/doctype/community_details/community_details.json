@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-24 09:13:16.698856",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "com_type",
+  "addressl1",
+  "addressl2",
+  "suburb",
+  "city",
+  "province",
+  "total_units",
+  "phone_num",
+  "email_address",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Community Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "com_type",
+   "fieldtype": "Select",
+   "label": "Community Type",
+   "options": "Community Scheme\nAuthorized Person\nManaging Agent\nAuthorized Representative"
+  },
+  {
+   "fieldname": "addressl1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "addressl2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "suburb",
+   "fieldtype": "Data",
+   "label": "Suburb"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "Eastern Cape\nFree State\nGauteng\nKwaZulu-Natal\nLimpopo\nMpumalanga\nNorthern Cape\nNorth West\nWestern Cape"
+  },
+  {
+   "fieldname": "total_units",
+   "fieldtype": "Data",
+   "label": "Total Units"
+  },
+  {
+   "fieldname": "phone_num",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 09:54:48.806121",
+ "modified_by": "Administrator",
+ "module": "Community Registration",
+ "name": "Community Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

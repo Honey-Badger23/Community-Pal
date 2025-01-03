@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-24 10:08:42.654241",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rep_id",
+  "scheme_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Authorized Representative",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "rep_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Representative ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheme_id",
+   "fieldtype": "Link",
+   "label": "Scheme ID",
+   "options": "Community Scheme"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 10:09:44.852446",
+ "modified_by": "Administrator",
+ "module": "Community Registration",
+ "name": "Authorized Representative",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

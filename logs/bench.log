@@ -1,0 +1,78 @@
+2024-12-20 21:39:26,187 DEBUG cd code1 && python3 -m venv env
+2024-12-20 21:39:27,601 DEBUG cd code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-20 21:39:28,852 DEBUG cd code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet wheel
+2024-12-20 21:39:29,555 LOG Getting frappe
+2024-12-20 21:39:29,555 DEBUG cd code1/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-12-20 21:39:34,487 LOG Installing frappe
+2024-12-20 21:39:34,487 DEBUG cd /home/michaeldev/code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade -e /home/michaeldev/code1/apps/frappe 
+2024-12-20 21:40:06,940 DEBUG cd /home/michaeldev/code1/apps/frappe && yarn install --check-files
+2024-12-20 21:40:31,104 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-20 21:40:31,104 DEBUG cd code1 && bench build
+2024-12-20 21:40:31,203 INFO /home/michaeldev/.local/bin/bench build
+2024-12-20 21:40:56,133 LOG setting up backups
+2024-12-20 21:40:56,142 LOG backups were set up
+2024-12-20 21:40:56,143 INFO Bench code1 initialized
+2024-12-23 08:33:43,917 INFO /home/michaeldev/.local/bin/bench find .
+2024-12-23 08:35:13,756 INFO /home/michaeldev/.local/bin/bench new-app Community-Registration
+2024-12-23 08:35:13,759 LOG creating new app community_registration
+2024-12-23 08:37:24,132 LOG Installing community_registration
+2024-12-23 08:37:24,133 DEBUG cd /home/michaeldev/code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade -e /home/michaeldev/code1/apps/community_registration 
+2024-12-23 08:37:25,975 DEBUG bench build --app community_registration
+2024-12-23 08:37:26,064 INFO /home/michaeldev/.local/bin/bench build --app community_registration
+2024-12-23 08:37:27,789 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-23 08:38:06,577 INFO /home/michaeldev/.local/bin/bench start
+2024-12-23 08:38:06,766 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-23 08:38:06,770 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-23 08:38:06,782 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-23 08:38:06,782 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-23 08:39:49,947 INFO /home/michaeldev/.local/bin/bench new-site community.localhost
+2024-12-23 08:40:41,663 INFO /home/michaeldev/.local/bin/bench start
+2024-12-23 08:40:41,825 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-23 08:40:41,826 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-23 08:40:41,826 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-23 08:40:41,826 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-23 08:43:33,658 INFO /home/michaeldev/.local/bin/bench set-config -g developer_mode true
+2024-12-23 08:43:42,391 INFO /home/michaeldev/.local/bin/bench start
+2024-12-23 08:43:42,566 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-23 08:43:42,566 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-23 08:43:42,567 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-23 08:43:42,568 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-24 08:09:10,266 INFO /home/michaeldev/.local/bin/bench start
+2024-12-24 08:09:10,433 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-24 08:09:10,433 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-24 08:09:10,434 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-24 08:09:10,435 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-24 08:11:24,295 INFO /home/michaeldev/.local/bin/bench --site library.localhost list-apps
+2024-12-24 08:11:35,856 INFO /home/michaeldev/.local/bin/bench --site community.localhost list-apps
+2024-12-24 08:12:02,341 INFO /home/michaeldev/.local/bin/bench --site library.localhost install-app community_registration
+2024-12-24 08:12:19,317 INFO /home/michaeldev/.local/bin/bench --site community.localhost install-app community_registration
+2024-12-24 08:12:33,507 INFO /home/michaeldev/.local/bin/bench start
+2024-12-24 08:12:33,675 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-24 08:12:33,675 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-24 08:12:33,676 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-24 08:12:33,677 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-24 08:50:48,446 INFO /home/michaeldev/.local/bin/bench start
+2024-12-24 08:50:48,638 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-24 08:50:48,641 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-24 08:50:48,642 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-24 08:50:48,650 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-30 08:31:22,598 INFO /home/michaeldev/.local/bin/bench start
+2024-12-30 08:31:22,813 INFO /home/michaeldev/.local/bin/bench serve --port 8001
+2024-12-30 08:31:22,813 INFO /home/michaeldev/.local/bin/bench worker
+2024-12-30 08:31:22,821 INFO /home/michaeldev/.local/bin/bench schedule
+2024-12-30 08:31:22,822 INFO /home/michaeldev/.local/bin/bench watch
+2024-12-30 12:00:03,083 INFO /home/michaeldev/.local/bin/bench --verbose --site all backup
+2024-12-30 13:47:25,220 INFO /home/michaeldev/.local/bin/bench setup env
+2024-12-30 13:47:25,226 DEBUG /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-30 13:47:25,911 DEBUG /home/michaeldev/code1/env/bin/python -m pip install --quiet wheel
+2024-12-30 13:47:26,377 DEBUG /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade -e ./apps/frappe
+2024-12-30 13:47:35,682 INFO /home/michaeldev/.local/bin/bench setup requirements
+2024-12-30 13:47:35,686 DEBUG /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-30 13:47:36,270 LOG Installing frappe
+2024-12-30 13:47:36,270 DEBUG cd /home/michaeldev/code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade -e /home/michaeldev/code1/apps/frappe 
+2024-12-30 13:47:37,879 DEBUG cd /home/michaeldev/code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 pdbpp~=0.10.3 
+2024-12-30 13:47:49,874 DEBUG cd /home/michaeldev/code1/apps/frappe && yarn install --check-files
+2024-12-30 13:48:11,035 LOG Installing community_registration
+2024-12-30 13:48:11,036 DEBUG cd /home/michaeldev/code1 && /home/michaeldev/code1/env/bin/python -m pip install --quiet --upgrade -e /home/michaeldev/code1/apps/community_registration 
+2024-12-31 12:00:03,395 INFO /home/michaeldev/.local/bin/bench --verbose --site all backup
+2025-01-02 12:00:03,670 INFO /home/michaeldev/.local/bin/bench --verbose --site all backup

@@ -1,0 +1,38 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_fc2465c0b2376f04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fc2465c0b2376f04 | /usr/bin/gzip >> ./community.localhost/private/backups/20241230_120003-community_localhost-database.sql.gz
+
+Backup Summary for community.localhost at 2024-12-30 12:00:04.099028
+Config  : /home/michaeldev/code1/sites/community.localhost/private/backups/20241230_120003-community_localhost-site_config_backup.json 127.0B
+Database: /home/michaeldev/code1/sites/community.localhost/private/backups/20241230_120003-community_localhost-database.sql.gz 296.5KiB
+Backup for Site community.localhost has been successfully completed
+Traceback (most recent call last):
+  File "/home/michaeldev/.local/bin/bench", line 8, in <module>
+    sys.exit(cli())
+             ^^^^^
+  File "/home/michaeldev/.local/lib/python3.12/site-packages/bench/cli.py", line 83, in cli
+    bench_config = get_config(".")
+                   ^^^^^^^^^^^^^^^
+  File "/home/michaeldev/.local/lib/python3.12/site-packages/bench/config/common_site_config.py", line 34, in get_config
+    return get_common_site_config(bench_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michaeldev/.local/lib/python3.12/site-packages/bench/config/common_site_config.py", line 42, in get_common_site_config
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 2 (char 3)
+set -o pipefail; /usr/bin/mariadb-dump --user=_fc2465c0b2376f04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fc2465c0b2376f04 | /usr/bin/gzip >> ./community.localhost/private/backups/20250102_120004-community_localhost-database.sql.gz
+
+Backup Summary for community.localhost at 2025-01-02 12:00:04.867369
+Config  : /home/michaeldev/code1/sites/community.localhost/private/backups/20250102_120004-community_localhost-site_config_backup.json 127.0B
+Database: /home/michaeldev/code1/sites/community.localhost/private/backups/20250102_120004-community_localhost-database.sql.gz 296.5KiB
+Backup for Site community.localhost has been successfully completed

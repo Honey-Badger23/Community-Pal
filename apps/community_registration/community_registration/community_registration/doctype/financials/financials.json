@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-24 09:57:33.556466",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "finance_id",
+  "scheme_id",
+  "levy_total",
+  "bank_name",
+  "account_num",
+  "auth_sign",
+  "finance_year",
+  "fidelity_fund",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Financials",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "finance_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Financial ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheme_id",
+   "fieldtype": "Link",
+   "label": "Scheme ID",
+   "options": "Community Scheme"
+  },
+  {
+   "fieldname": "levy_total",
+   "fieldtype": "Data",
+   "label": "Annual Levy Total"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "account_num",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "auth_sign",
+   "fieldtype": "Data",
+   "label": "Authorized Signatory"
+  },
+  {
+   "fieldname": "finance_year",
+   "fieldtype": "Date",
+   "label": "Financial Year End"
+  },
+  {
+   "fieldname": "fidelity_fund",
+   "fieldtype": "Data",
+   "label": "Fidelity Fund Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 10:03:58.906803",
+ "modified_by": "Administrator",
+ "module": "Community Registration",
+ "name": "Financials",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
